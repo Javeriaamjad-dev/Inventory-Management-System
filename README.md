@@ -13,8 +13,6 @@ This is a console-based **Inventory Management System** developed as a final pro
     - [User Functions](#user-functions)
   - [Usage Flow](#usage-flow)
 - [Code Overview](#code-overview)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
