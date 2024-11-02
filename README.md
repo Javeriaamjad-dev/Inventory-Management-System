@@ -1,12 +1,12 @@
 # Inventory Management System
 
-A console-based Inventory Management System in Python, designed for user authentication and managing product inventory operations. This project includes features for adding, viewing, deleting, adjusting stock levels, and low-stock alerts. Developed as a final project for Batch 63 of PIAIC Islamabad.
+This is a console-based Inventory Management System developed in Python. The system manages user authentication, product inventory, and includes essential features like product addition, viewing, deletion, stock adjustments, and low stock alerts. It serves as the final project for Batch 63 of PIAIC.
 
 ## Features
 
-- **User Authentication**: Admin and User roles with role-based access control.
-- **Product Management**: Admins can add, view, delete, and adjust product stock.
-- **Stock Alerts**: Alerts for products with stock levels below 10.
+- **User Authentication**: Admin and User roles with specific permissions.
+- **Product Management**: Add, view, delete, and adjust product stock.
+- **Stock Alerts**: Low stock alert for products with quantities below 10.
 
 ## Prerequisites
 
@@ -17,45 +17,62 @@ A console-based Inventory Management System in Python, designed for user authent
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/Javeriaamjad-dev/Inventory-Management-System.git
-   cd Inventory-Management-System/inventory_management_system/
-
+   cd Inventory-Management-System/inventory_management_system
    ```
 
 2. **Run the Script**:
    ```bash
-   python inventory_management_system.py
+   python main.py
    ```
 
 ## Usage Guide
 
-1. **Login**: 
-   - Enter a username and password.
-   - Sample users:
+1. **Login**:
+   - Available users:
      - Admin: `username = "jia"`, `password = "jia498627"`
      - User: `username = "javeriaamjad"`, `password = "javeriaamjad"`
 
 2. **Main Menu Options**:
-   - `1. Add Product (Admin Only)`: Add new products to inventory.
-   - `2. View Products`: List all products with details.
-   - `3. Delete Product (Admin Only)`: Remove products from inventory.
-   - `4. Adjust Stock (Admin Only)`: Update stock quantities.
-   - `5. Check Stock Levels`: Displays low-stock products.
-   - `6. Exit`: Exit the application.
+   - `1. Add Product (Admin Only)`
+   - `2. View Products`
+   - `3. Delete Product (Admin Only)`
+   - `4. Adjust Stock (Admin Only)`
+   - `5. Check Stock Levels`
+   - `6. Exit`
 
 ## Code Overview
 
 - **Classes**:
-  - `User`: Handles user information and authentication.
-  - `Product`: Manages product details like ID, name, category, price, and stock.
+  - `User`: Manages user authentication.
+  - `Product`: Stores product details.
 
 - **Functions**:
-  - `login()`: Authenticates users.
-  - `add_product()`: Adds a product to inventory (admin only).
-  - `view_products()`: Displays products.
-  - `delete_product()`: Deletes a product (admin only).
-  - `adjust_stock()`: Adjusts stock (admin only).
-  - `check_stock()`: Checks for low stock.
-  - `safe_input()`: Safely inputs and casts values.
+  - `login()`: User authentication.
+  - `add_product()`: Adds products to inventory (admin only).
+  - `view_products()`: Lists products.
+  - `delete_product()`: Removes products (admin only).
+  - `adjust_stock()`: Changes stock levels (admin only).
+  - `check_stock()`: Low stock alert.
+  - `safe_input()`: Error-handling for input.
+
+## Example
+
+```bash
+Welcome to the Inventory Management System!
+Enter username: jia
+Enter password: jia498627
+Welcome jia!
+
+Options:
+1. Add Product (Admin Only)
+2. View Products
+3. Delete Product (Admin Only)
+4. Adjust Stock (Admin Only)
+5. Check Stock Levels
+6. Exit
+Choose an option: 2
+No products available.
+```
 
 ---
 
