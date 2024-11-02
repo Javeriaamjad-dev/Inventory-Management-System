@@ -16,7 +16,7 @@ A console-based Inventory Management System in Python, designed for user authent
 
 1. **Clone the Repository**:
    ```bash
-   git clone <repository-link>
+   git clone https://github.com/Javeriaamjad-dev/Inventory-Management-System
    cd Inventory-Management-System
    ```
 
