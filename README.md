@@ -42,7 +42,7 @@ This is a console-based **Inventory Management System** developed as a final pro
 ### Installation
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/Inventory-Management-System.git
+   git clone https://github.com/Javeriaamjad-dev/Inventory-Management-System.git
    ```
 2. Navigate to the project directory:
    ```bash
